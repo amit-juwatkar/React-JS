@@ -1,0 +1,43 @@
+import React from "react";
+
+export default function AboutUsPage(){
+    return (
+        <>
+
+        </>
+    )
+}
+
+const ContactUSPage = () => {
+    return (
+        <>
+            Hello WOrld
+        </>
+    )
+}
+export { ContactUSPage };
+
+
+class Portfolio extends React.Component {
+  render() {
+    return <h1>Hello WOrld!!!</h1>;
+  }
+}
+
+export { Portfolio }
+
+-----------------------------------------------------------------------------------
+
+import AboutUsPage, { ContactUSPage, Portfolio } from "~/src/componenets/about";
+
+export default function Home() {
+  return (
+    <>
+      I Am Home Page
+      <br/>
+      <AboutUsPage/>
+      <ContactUSPage />
+      <Portfolio />
+    </>
+  );
+}
